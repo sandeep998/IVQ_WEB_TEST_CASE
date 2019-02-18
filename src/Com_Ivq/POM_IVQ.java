@@ -20,7 +20,17 @@ public class POM_IVQ extends Base_IVQ{
 	public static final By signin=By.xpath("//button[text()='Sign In']");
 	public static final By createadinventory=By.xpath("//button[@class='btn btn-oblong btn-primary mg-b-10 pull-right']");
 	public static final By appscreenselect=By.xpath("//select[@name='pagename']");
-	public static final By appinventoryname=By.xpath("//input[@name='compaign']");
+	public static final By appinventoryname=By.xpath("//input[@placeholder='Enter Ad Inventory name']");
+	public static final By startDate=By.xpath("//input[@placeholder='MM/DD/YYYY']");
+	public static final By startDateSelect=By.xpath("//*[@id='modaldemo1']/div/form/div/div[2]/div/div[1]/div[3]/div/div[2]/div[2]/div/div[2]/div[2]/div[4]/div[4]");
+	//*[@id="modaldemo1"]/div/form/div/div[2]/div/div[1]/div[3]/div/div[2]/div[2]/div/div[2]/div[2]/div[4]/div[4]
+	//public static final By endDate=By.xpath("//input[@placeholder='MM/DD/YYYY'])[2]");
+//	public static final By endDate=By.xpath("//*[@id='modaldemo1']/div/form/div/div[2]/div/div[1]/div[4]/div/div[2]/div[1]/div/input");
+	public static final By EndDatenew=By.xpath("//*[@id='modaldemo1']/div/form/div/div[2]/div/div[1]/div[4]/div/div[2]/div[1]/div/input");
+	public static final By enddatedropdown=By.xpath("//*[@id='modaldemo1']/div/form/div/div[2]/div/div[1]/div[4]/div/div[2]/div[2]/div/div[2]/div[2]/div[5]/div[4]");
+	public static final By selectsource=By.xpath("//select[@name='url']");
+	
+	public static final By enterurl=By.xpath("//input[@name='url']");
 	public static void userName(WebDriver driver,String sendkeys) {
 		
 		visibilityOfElement(driver, username, 30);
@@ -66,6 +76,52 @@ public class POM_IVQ extends Base_IVQ{
 		
 		
 	}
+	public static void startDa(WebDriver driver) {
+		
+		visibilityOfElement(driver, startDate, 30);
+		driver.findElement(startDate).click();
+		
+		
+	}
+	public static void startDaSel(WebDriver driver) {
+		
+		visibilityOfElement(driver, startDateSelect, 30);
+		driver.findElement(startDateSelect).click();
+		
+		
+	}
 	
+	public static void endDaClick(WebDriver driver) {
+		
+		visibilityOfElement(driver, EndDatenew, 30);
+		driver.findElement(EndDatenew).click();
+		
+		
+	}
+	public static void endDaclickdate(WebDriver driver) {
+		
+		visibilityOfElement(driver, enddatedropdown, 30);
+		driver.findElement(enddatedropdown).click();
+		
+		
+	}
+	
+	public static void selectSource123(WebDriver driver) {
+		
+		visibilityOfElement(driver, selectsource, 30);
+		WebElement select1=driver.findElement(selectsource);
+    Select sele=new Select(select1);
+     sele.selectByVisibleText("URL");
+
+		
+		
+	}
+	public static void URL(WebDriver driver,String str1) {
+		
+		visibilityOfElement(driver, enterurl, 30);
+		driver.findElement(enterurl).sendKeys(str1);
+		
+		
+	}
 	
 }

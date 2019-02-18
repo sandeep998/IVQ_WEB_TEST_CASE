@@ -5,8 +5,8 @@
     <classes>
       <class name="Com_Ivq.Excute_IVQ">
         <methods>
-          <include name="ecCute"/>
           <include name="before"/>
+          <include name="createUser"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- Com_Ivq.Excute_IVQ -->

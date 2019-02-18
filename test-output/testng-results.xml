@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9582" started-at="2018-12-20T05:50:36Z" finished-at="2018-12-20T05:50:45Z">
+  <suite name="Default suite" duration-ms="53475" started-at="2019-02-15T04:36:47Z" finished-at="2019-02-15T04:37:40Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9582" started-at="2018-12-20T05:50:36Z" finished-at="2018-12-20T05:50:45Z">
+    <test name="Default test" duration-ms="53475" started-at="2019-02-15T04:36:47Z" finished-at="2019-02-15T04:37:40Z">
       <class name="Com_Ivq.Excute_IVQ">
-        <test-method status="PASS" signature="before()[pri:0, instance:Com_Ivq.Excute_IVQ@646d64ab]" name="before" is-config="true" duration-ms="6699" started-at="2018-12-20T05:50:36Z" finished-at="2018-12-20T05:50:42Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:Com_Ivq.Excute_IVQ@646d64ab]" name="before" is-config="true" duration-ms="7185" started-at="2019-02-15T04:36:47Z" finished-at="2019-02-15T04:36:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="ecCute()[pri:0, instance:Com_Ivq.Excute_IVQ@646d64ab]" name="ecCute" duration-ms="1936" started-at="2018-12-20T05:50:42Z" finished-at="2018-12-20T05:50:44Z">
+        <test-method status="PASS" signature="createUser()[pri:0, instance:Com_Ivq.Excute_IVQ@646d64ab]" name="createUser" duration-ms="45352" started-at="2019-02-15T04:36:54Z" finished-at="2019-02-15T04:37:39Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ecCute -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Com_Ivq.Excute_IVQ@646d64ab]" name="tearDown" is-config="true" duration-ms="928" started-at="2018-12-20T05:50:44Z" finished-at="2018-12-20T05:50:45Z">
+        </test-method> <!-- createUser -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Com_Ivq.Excute_IVQ@646d64ab]" name="tearDown" is-config="true" duration-ms="914" started-at="2019-02-15T04:37:39Z" finished-at="2019-02-15T04:37:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
